@@ -81,7 +81,7 @@ pipeline {
 		stage('Trigger Deployment') {
 			steps {
 				script {
-					build job: 'Deploy Spring',
+					build job: 'Deploy Cart',
 						  parameters: [
 							  string(name: 'REGION', value: "${AWS_REGION}"),
 							  string(name: 'VERSION', value: "${VERSION}"),
